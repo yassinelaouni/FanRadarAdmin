@@ -1,5 +1,3 @@
-# elzero-web-school
-
 ## Project Architecture
 
 This project is a Vue 3 application structured for an admin and writer portal, using Pinia for state management and Vue Router for navigation. The main folders and their purposes are:
