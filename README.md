@@ -1,35 +1,60 @@
 # elzero-web-school
 
-## Project setup
+## Project Architecture
 
-```
-npm install
-```
+This project is a Vue 3 application structured for an admin and writer portal, using Pinia for state management and Vue Router for navigation. The main folders and their purposes are:
 
-### Compiles and hot-reloads for development
+- **src/components/**: Reusable UI components (e.g., Topbar, Sidebar, Pagination, PostCard, StatCard, etc.).
+- **src/views/**: Page-level views, organized by feature (admin, writer, auth, etc.).
+- **src/layouts/**: Layout components for different sections (e.g., DashboardLayout, AuthLayout).
+- **src/store/**: Pinia stores for state management (e.g., auth.js for authentication state).
+- **src/router/**: Vue Router configuration and route definitions.
+- **src/mock/**: Mock data for development/testing (e.g., mockPosts).
+- **src/assets/**: Static assets like images and icons.
+- **src/index.css**: Global styles, using Tailwind CSS for utility-first styling.
+- **src/main.js**: App entry point, sets up Vue, Pinia, Router, and global styles.
+- **App.vue**: Root component, renders the main layout and router view.
 
-```
-npm run serve
-```
+### Main Features
+- **Authentication**: Login, signup, password reset, and role-based access (admin/writer).
+- **Admin Dashboard**: User management, content moderation, fandom tracking, shop management, analytics.
+- **Writer Portal**: Post creation (articles, images, videos, polls), editing, and submission for review.
+- **Reusable Components**: Cards, tables, pagination, charts, and more.
+- **Layouts**: Dashboard and Auth layouts for consistent UI.
+- **Mock Data**: Used for development/demo purposes.
 
-### Compiles and minifies for production
+## How to Run the Project
 
-```
-npm run build
-```
+1. **Install dependencies**
 
-### Run your unit tests
+   ```bash
+   npm install
+   ```
 
-```
-npm run test:unit
-```
+2. **Start the development server**
 
-### Lints and fixes files
+   ```bash
+   npm run serve
+   ```
 
-```
-npm run lint
-```
+3. **Build for production**
 
-### Customize configuration
+   ```bash
+   npm run build
+   ```
 
-See [Configuration Reference](https://cli.vuejs.org/config/).
+4. **Run unit tests**
+
+   ```bash
+   npm run test:unit
+   ```
+
+5. **Lint and fix files**
+
+   ```bash
+   npm run lint
+   ```
+
+---
+
+For more details, see the [Vue CLI Configuration Reference](https://cli.vuejs.org/config/).
